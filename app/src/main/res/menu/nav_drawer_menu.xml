@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/allNote"
+            android:icon="@drawable/ic_description"
+            android:title="Notes"/>
+
+        <item
+            android:id="@+id/allReminderNote"
+            android:icon="@drawable/ic_notifications"
+            android:title="Note Reminders"/>
+
+        <item
+            android:id="@+id/backUpNote"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Login / Signup"/>
+
+    </group>
+
+</menu>

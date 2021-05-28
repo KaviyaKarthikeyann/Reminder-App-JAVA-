@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddReminderDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:background="#cc99ff"
+        android:paddingStart="10dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/add_reminder_title"
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="@string/add_reminder_hint_select_time"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/add_reminder_hint_select_date"
+        android:textColor="#000"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textSelectTime"
+        app:layout_constraintStart_toStartOf="@+id/textSelectTime"
+        app:layout_constraintTop_toBottomOf="@+id/textSelectTime" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/textSelectDate"
+        app:layout_constraintStart_toStartOf="@+id/textSelectDate"
+        app:layout_constraintTop_toBottomOf="@+id/textSelectDate" />
+
+    <Button
+        android:id="@+id/buttonSaveReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/cancel_corner_radius"
+        android:text="@string/add_reminder_save"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancelReminder"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintVertical_bias="0.088"/>
+
+    <Button
+        android:id="@+id/buttonCancelReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cancel_corner_radius"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/add_reminder_cancel_reminder"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSaveReminder"
+        app:layout_constraintStart_toStartOf="@+id/buttonSaveReminder"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSaveReminder" />
+
+</android.support.constraint.ConstraintLayout>
